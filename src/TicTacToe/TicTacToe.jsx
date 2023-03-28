@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {useState } from "react";
 import "./TicTacToe.css";
 
 
@@ -65,8 +65,8 @@ const TicTacToe = () => {
 	};
 
   const handelRestart = () =>{
-    setWinner(null)
-    setStatus(null)
+    setWinner()
+    setStatus()
     setTurn('X')
     setCells(Array(9).fill(""))
   }
